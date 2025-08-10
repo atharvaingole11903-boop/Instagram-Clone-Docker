@@ -5,7 +5,7 @@ WORKDIR /home/node
 # ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json ./
 RUN npm install
-RUN npm config set unsafe-perm=true
+RUN RUN npm config set unsafe-perm true
 COPY . ./
 EXPOSE 3001
 
